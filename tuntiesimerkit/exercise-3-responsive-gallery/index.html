@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiivinen galleria - Flexbox & Grid esimerkki</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Valokuvagalleria</h1>
+        <p>Responsiivinen kuvagalleria, joka on rakennettu CSS Gridillä ja Flexboxilla</p>
+    </header>
+
+    <main class="gallery-container">
+        <section class="filter-section">
+            <h2>Suodata kategorian mukaan</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Kaikki</button>
+                <button class="filter-btn" data-filter="nature">Luonto</button>
+                <button class="filter-btn" data-filter="urban">Kaupunki</button>
+                <button class="filter-btn" data-filter="portrait">Muotokuva</button>
+            </div>
+        </section>
+
+        <div class="gallery">
+            <!-- Row 1 -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop"
+                    alt="Vuoristomaisema">
+                <div class="overlay">
+                    <h3>Vuorenhuippu</h3>
+                    <p>Luonto</p>
+                </div>
+            </div>
+
+            <div class="gallery-item large" data-category="urban">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=500&h=400&fit=crop"
+                    alt="Kaupungin siluetti">
+                <div class="overlay">
+                    <h3>Kaupungin valot</h3>
+                    <p>Kaupunki</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop"
+                    alt="Metsäpolku">
+                <div class="overlay">
+                    <h3>Metsäpolku</h3>
+                    <p>Luonto</p>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=400&fit=crop"
+                    alt="Muotokuva">
+                <div class="overlay">
+                    <h3>Studiomuotokuva</h3>
+                    <p>Muotokuva</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="urban">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=500&h=400&fit=crop"
+                    alt="Katukuvaus">
+                <div class="overlay">
+                    <h3>Katunäkymä</h3>
+                    <p>Kaupunki</p>
+                </div>
+            </div>
+
+            <div class="gallery-item large" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop"
+                    alt="Meren auringonlasku">
+                <div class="overlay">
+                    <h3>Meren auringonlasku</h3>
+                    <p>Luonto</p>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=400&fit=crop"
+                    alt="Elämäntapakuva">
+                <div class="overlay">
+                    <h3>Elämäntapakuva</h3>
+                    <p>Muotokuva</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="urban">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=500&h=400&fit=crop"
+                    alt="Arkkitehtuuri">
+                <div class="overlay">
+                    <h3>Arkkitehtuuri</h3>
+                    <p>Kaupunki</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop"
+                    alt="Luonnonvaraiset eläimet">
+                <div class="overlay">
+                    <h3>Luonnonvarainen eläimistö</h3>
+                    <p>Luonto</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 &copy; Jari Kovis | Laurea ammattikorkeakoulu. Kaikki oikeudet pidätetään.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

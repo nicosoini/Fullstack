@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteydenottolomake - Lomakkeen tyylityksen esimerkki</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main class="form-container">
+        <header class="form-header">
+            <h1>Ota yhteyttä</h1>
+            <p>Haluamme kuulla sinusta. Lähetä meille viesti!</p>
+        </header>
+
+        <div class="form-wrapper">
+            <form id="contactForm" class="contact-form" novalidate>
+                <!-- Onnistumisviesti -->
+                <div id="successMessage" class="success-message hidden">
+                    <h3>✓ Viesti lähetetty onnistuneesti!</h3>
+                    <p>Kiitos yhteydenotosta. Palaamme pian asiaan.</p>
+                </div>
+
+                <!-- Nimi -->
+                <div class="form-group">
+                    <label for="fullName">Koko nimi <span class="required">*</span></label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Kirjoita koko nimesi" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <!-- Sähköposti -->
+                <div class="form-group">
+                    <label for="email">Sähköpostiosoite <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="etunimi.sukunimi@example.com" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <!-- Puhelin -->
+                <div class="form-group">
+                    <label for="phone">Puhelinnumero</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+358 40 123 4567">
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <!-- Aihe -->
+                <div class="form-group">
+                    <label for="subject">Aihe <span class="required">*</span></label>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Valitse aihe --</option>
+                        <option value="general">Yleinen tiedustelu</option>
+                        <option value="support">Tekninen tuki</option>
+                        <option value="feedback">Palaute</option>
+                        <option value="partnership">Yhteistyö</option>
+                        <option value="other">Muu</option>
+                    </select>
+                    <span class="error-message" id="subjectError"></span>
+                </div>
+
+                <!-- Viesti -->
+                <div class="form-group">
+                    <label for="message">Viesti <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="6" placeholder="Kirjoita viestisi tähän..."
+                        required></textarea>
+                    <span class="char-count"><span id="charCount">0</span>/500</span>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+                <!-- Valintaruutu -->
+                <div class="form-group checkbox-group">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe" class="checkbox-label">
+                            Tilaa uutiskirjeemme saadaksesi päivityksiä
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Suostumus -->
+                <div class="form-group checkbox-group">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree" class="checkbox-label">
+                            Hyväksyn <a href="#">tietosuojakäytännön</a> ja <a href="#">käyttöehdot</a> <span
+                                class="required">*</span>
+                        </label>
+                    </div>
+                    <span class="error-message" id="agreeError"></span>
+                </div>
+
+                <!-- Lomakkeen toiminnot -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Lähetä viesti</button>
+                    <button type="reset" class="btn btn-secondary">Tyhjennä lomake</button>
+                </div>
+
+                <!-- Lomakkeen ohjeteksti -->
+                <p class="form-help">
+                    <span class="required">*</span> tarkoittaa pakollista kenttää
+                </p>
+            </form>
+        </div>
+
+        <!-- Yhteystiedot -->
+        <aside class="contact-info">
+            <h3>Muita yhteydenottotapoja</h3>
+            <div class="info-item">
+                <strong>Sähköposti:</strong> <a href="mailto:jarkova@laurea.com">jarkova@laurea.com</a>
+            </div>
+            <div class="info-item">
+                <strong>Puhelin:</strong> +358 40 123 4567
+            </div>
+            <div class="info-item">
+                <strong>Osoite:</strong><br>
+                Ratatie 22<br>
+                00100 Vantaa, Suomi
+            </div>
+            <div class="info-item">
+                <strong>Aukioloajat:</strong><br>
+                Ma - Pe: 9.00 - 18.00<br>
+                La - Su: Suljettu
+            </div>
+        </aside>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

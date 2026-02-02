@@ -1,0 +1,153 @@
+/* =================================
+   CSS Styles for Workshop 01
+   ================================= */
+
+/* TODO Task 2: Add your general styles here */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    /* Add your reset styles here (margin, padding, box-sizing) */
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #65476b;
+background: linear-gradient(90deg,rgb(179, 179, 179) 0%, rgb(213, 213, 213) 54%, rgba(209, 209, 209, 1) 80%, rgba(245, 245, 245, 1) 100%);
+    /* Add body styles:  font-family, background-color, color, etc. */
+
+}
+
+/* TODO Task 2: Style your headings */
+h1 {
+    color: rgb(65, 65, 65);
+    text-align: center;
+    text-shadow: h-shadow v-shadow blur-radius color;
+    
+}
+
+h2 {
+    
+}
+
+/* TODO Task 2: Style your paragraphs */
+p {
+    
+}
+
+/* TODO Task 2: Style your images */
+img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px 0;
+    
+}
+
+/* TODO Task 3: Navigation Styles */
+.nav {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(176, 176, 176);
+    opacity: 0.7;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    
+}
+
+.nav ul {
+    /* Remove bullets and style the list */
+    list-style-type: none;
+    
+}
+
+.nav li {
+    /* Display items horizontally */
+    display: inline;
+    padding: 10px;
+}
+
+.nav a {
+    /* Style the links */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav a:hover {
+    /* Add hover effect */
+    color: rgb(162, 162, 162);
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    
+}
+
+#contact {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+
+}
+
+/* TODO Task 4: Form Styles */
+form {
+    
+}
+
+label {
+    
+}
+
+input,
+textarea {
+    /* Style form inputs */
+    max-width: 200px;
+}
+
+button,
+input[type="submit"] {
+    /* Style the submit button */
+}
+
+button:hover,
+input[type="submit"]: hover {
+    /* Add hover effect for button */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(176, 176, 176);
+    opacity: 0.7;
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* TODO Task 5: Media Queries for Responsive Design */
+/* Tablet styles (optional) */
+@media (max-width: 768px) {
+    /* Add your tablet/mobile styles here */
+    
+}
+
+/* Mobile styles */
+@media (max-width:  480px) {
+    /* Add your mobile-specific styles here */
+    
+}
