@@ -13,32 +13,30 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #65476b;
-background: linear-gradient(90deg,rgb(179, 179, 179) 0%, rgb(213, 213, 213) 54%, rgba(209, 209, 209, 1) 80%, rgba(245, 245, 245, 1) 100%);
+    background-color: #101720;
     /* Add body styles:  font-family, background-color, color, etc. */
 
 }
 
 /* TODO Task 2: Style your headings */
 h1 {
-    color: rgb(65, 65, 65);
+    color: #6089c0;
     text-align: center;
-    text-shadow: h-shadow v-shadow blur-radius color;
-    
+    font-size: 50px;
 }
 
 h2 {
-    
+    color: #7cb3fb;
 }
 
 /* TODO Task 2: Style your paragraphs */
 p {
-    
+    color: white;
 }
 
 /* TODO Task 2: Style your images */
 img {
-    max-width: 200px;
+    max-width: 400px;
     height: auto;
     border-radius: 20px;
     margin: 20px 0;
@@ -50,10 +48,10 @@ img {
     display: block;
     text-align: center;
     justify-content: center;
-    background-color: rgb(176, 176, 176);
+    background-color: #181d24;
     opacity: 0.7;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 40px;
 
     
 }
@@ -74,7 +72,8 @@ img {
     /* Style the links */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
 .nav a:hover {
@@ -93,50 +92,78 @@ main {
 }
 
 #contact {
-    background-color: white;
-    margin: 10px;
+    background-color: #f9f9f9;
+    margin: 20px auto;
     padding: 20px;
-    width: 200px;
-    height: 200px;
-
+    max-width: 400px; /* Sopiva leveys lomakkeelle */
+    border-radius: 8px;
 }
 
-/* TODO Task 4: Form Styles */
 form {
-    
+    display: flex;
+    flex-direction: column; /* Laitetaan elementit allekkain */
 }
 
 label {
-    
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 input,
 textarea {
-    /* Style form inputs */
-    max-width: 200px;
+    width: 100%; /* Täyttää käytettävissä olevan tilan */
+    padding: 10px;
+    margin-bottom: 15px; /* Lisää väliä elementtien välille */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Pitää paddingin elementin sisällä */
 }
 
-button,
-input[type="submit"] {
-    /* Style the submit button */
+textarea {
+    min-height: 100px;
+    resize: vertical; /* Sallii vain pystysuuntaisen venytyksen */
 }
 
-button:hover,
-input[type="submit"]: hover {
-    /* Add hover effect for button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Hieman tummempi vihreä hoverissa */
 }
 
 /* Footer Styles */
 footer {
-    background-color: rgb(176, 176, 176);
+    background-color: #181d24;
     opacity: 0.7;
     display: flex;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     justify-content: center;
     margin-bottom: 0;
-    padding: 20px;
+    padding: 40px;
     margin-top: 20px;
+}
+
+#about-text {
+    max-width: 600px;
+
+}
+
+#aboutB {
+    font-size: 50px;
+    margin: 50px
+}
+#contactB {
+    font-size: 50px;
+    margin: 50px
 }
 
 /* TODO Task 5: Media Queries for Responsive Design */

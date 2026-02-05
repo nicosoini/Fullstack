@@ -1,56 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TODO: Add a descriptive title for your page -->
     <title>WS1: HTML Page</title>
-    
+
     <!-- Link to CSS file -->
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <!-- TODO Task 3: Add navigation menu here -->
     <nav class="nav">
-        <ul>
+      <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        </ul>
+      </ul>
     </nav>
-    
 
     <main>
-        <section id="home">
-            <!-- Add your heading, subheading, paragraph, and image here -->
-                 <h1>Nico Soini</h1>
-    <img src="images/nicofullstack.jpg" alt="Nico">
-    <!-- Use  h2, p, and img tags -->
-        </section>
-        
-        <!-- TODO Task 1 & 3: Add an about section -->
-        <section id="about">
-            <h1>Fullstack Website Development Task 1</h1>
-     <p>"Information Technology student from Vantaa."</p>
-        </section>
-        
-        <!-- TODO Task 4: Add contact form section here -->
-        <section id="contact">
-            <form>
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" placeholder="Koko nimesi" required><br>
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email" placeholder="esim. etu.sukunimi@gmail.com" required><br>
-                <label for="text">Comment</label><br>
-                <textarea name="text" id="text" placeholder="Kirjoita kommentti..." required></textarea><br>
-                <button id="submit">Submit</button>
-            </form>
-        </section>
+      <section id="home">
+        <!-- Add your heading, subheading, paragraph, and image here -->
+        <h1>Nico Soini</h1>
+        <img src="images/nicofullstack.jpg" alt="Nico" />
+        <!-- Use  h2, p, and img tags -->
+      </section>
+      <!-- TODO Task 1 & 3: Add an about section -->
+      <section id="about">
+        <div id="aboutB">
+        <h2>About me</h2>
+      </div>
+        <div id="about-text">
+          <h2>Fullstack student</h2>
+          <p>
+            "I am an Information Technology student who is always ready for a
+            new challenge. Growing up, I developed a passion for technology, and
+            I am now working to make it my career. During my studies, I have
+            learned how to plan a digital service and turn it into a reality. I
+            have skills in HTML, CSS, JavaScript, SQL, and UX-design. Currently,
+            I am developing my skills in digital service development, with a
+            special focus on FullStack."
+          </p>
+        </div>
+      </section>
+        <div id="contactB">
+            <h2>Contact me</h2> 
+        </div>
+
+      <!-- TODO Task 4: Add contact form section here -->
+      <section id="contact">
+        <form>
+          <label for="name">Name</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Koko nimesi"
+            required
+          /><br />
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="esim. etu.sukunimi@gmail.com"
+            required
+          /><br />
+          <label for="text">Comment</label><br />
+          <textarea
+            name="text"
+            id="text"
+            placeholder="Kirjoita kommentti..."
+            required
+          ></textarea
+          ><br />
+          <button id="submit">Submit</button>
+        </form>
+      </section>
     </main>
-    
+
     <!-- Optional: Add a footer -->
     <footer>
-        <p>Nico Soini 2026</p>
+      <p>Nico Soini 2026</p>
     </footer>
-</body>
+  </body>
 </html>
