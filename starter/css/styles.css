@@ -42,6 +42,7 @@ img {
     height: auto;
     border-radius: 20px;
     margin: 20px 0;
+    border: 5px solid rgb(102, 176, 245);
     
 }
 
@@ -100,6 +101,7 @@ main {
     padding: 20px;
     width: 600px; /* Sopiva leveys lomakkeelle */
     border-radius: 8px;
+    border: 5px solid rgb(141, 176, 252);
 }
 
 form {
