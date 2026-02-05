@@ -27,11 +27,13 @@ h1 {
 
 h2 {
     color: #7cb3fb;
+
 }
 
 /* TODO Task 2: Style your paragraphs */
 p {
     color: white;
+    font-size: 20px;
 }
 
 /* TODO Task 2: Style your images */
@@ -78,7 +80,8 @@ img {
 
 .nav a:hover {
     /* Add hover effect */
-    color: rgb(162, 162, 162);
+    color: rgb(119, 180, 250);
+    text-decoration: wavy;
 }
 
 /* Main Content Styles */
@@ -95,7 +98,7 @@ main {
     background-color: #f9f9f9;
     margin: 20px auto;
     padding: 20px;
-    max-width: 400px; /* Sopiva leveys lomakkeelle */
+    width: 600px; /* Sopiva leveys lomakkeelle */
     border-radius: 8px;
 }
 
@@ -132,7 +135,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s;
+
 }
 
 button:hover {
@@ -145,36 +148,96 @@ footer {
     opacity: 0.7;
     display: flex;
     color: rgb(255, 255, 255);
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
+    align-items: center;
     margin-bottom: 0;
     padding: 40px;
     margin-top: 20px;
 }
 
 #about-text {
-    max-width: 600px;
+    max-width: 800px;
+    background-color: #1b2736;
+    padding: 30px;
+    border-radius: 20px;
 
 }
 
 #aboutB {
     font-size: 50px;
-    margin: 50px
+    margin: 100px
 }
 #contactB {
     font-size: 50px;
-    margin: 50px
+    margin: 100px
+}
+#socials ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+#socials a {
+    text-decoration: none;
+    color: rgb(128, 183, 255);
+    font-size: 20px;
+}
+#socials a:hover {
+    color: rgb(91, 130, 180);;
 }
 
 /* TODO Task 5: Media Queries for Responsive Design */
 /* Tablet styles (optional) */
 @media (max-width: 768px) {
     /* Add your tablet/mobile styles here */
-    
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav li {
+        display: block;
+        padding: 5px 0;
+    }
+    .nav {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    #aboutB, #contactB {
+        font-size: 32px;
+        margin: 40px 0;
+    }
+    p {
+        font-size: 18px;
+    }
+    #contact {
+        width: 90%;
+        padding: 15px;
+    }
+    #about-text {
+        width: 85%;
+        padding: 20px;
+    }
+    img {
+        max-width: 90%;
+        height: auto;
+    }
 }
 
 /* Mobile styles */
 @media (max-width:  480px) {
     /* Add your mobile-specific styles here */
+    h1 {
+        font-size: 28px;
+    }
+    .nav a {
+        font-size: 18px;
+    }
+    button {
+        width: 100%;
+    }
     
 }
